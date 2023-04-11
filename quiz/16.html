@@ -1,0 +1,296 @@
+<style type='text/css'>
+	#q-row{width: 80%;
+				max-width: 1200px;
+				min-width: 500px;
+				position: absolute;
+				left: 10%;}
+	body {
+		font-family: SANS-SERIF;
+	}
+	.callback {
+	  background: rgba(0 60 82 / 58%);
+	  -webkit-border-radius: 18px;
+	  -moz-border-radius: 18px;
+	  -ms-border-radius: 18px;
+	  border-radius: 18px;
+	  padding: 25px 40px 12px 40px;
+	  margin: 15px 20px 30px 20px;
+	  min-height: 480px;
+	}
+	.callback .cb-title {
+	  color: #ffffff;
+	  text-transform: uppercase;
+	  text-align: left;
+	  margin-bottom: 28px;
+	  font-size: 18px;
+	  border-radius: 15px;
+	  padding: 5px;
+	}
+	.callback input {
+	  width: 99%;
+	  padding: 8px 14px 12px 14px;
+	  -webkit-border-radius: 8px;
+	  -moz-border-radius: 8px;
+	  -ms-border-radius: 8px;
+	  border-radius: 18px;
+	  border: 0;
+	  font-size: 19px;
+	  background: #ffffff;
+	  height: 38px;
+	  margin-top: 11px;
+    margin-bottom: 6px;
+	}
+	.callback input[type='radio'] {
+	    width: 30px;
+		height: 30px;
+		border: 0;
+		font-size: 25px;
+		background: #ffffff;
+		float: left;
+		margin: 7px;
+	}
+	.callback input:focus {
+	  outline: 0;
+	  border: 0;
+	  box-shadow: none;
+	}
+	.callback input:focus::-webkit-input-placeholder {
+	  color: #fff;
+	}
+	.callback input:focus:-moz-placeholder {
+	  color: #fff;
+	}
+	.callback input:focus::-moz-placeholder {
+	  color: #fff;
+	}
+	.callback input:focus:-ms-input-placeholder {
+	  color: #fff;
+	}
+	.callback input::-webkit-input-placeholder {
+	  position: relative;
+	  top: 3px;
+	}
+	.callback input:-moz-placeholder {
+	  position: relative;
+	  top: 3px;
+	}
+	.callback input::-moz-placeholder {
+	  position: relative;
+	  top: 3px;
+	}
+	.callback input:-ms-input-placeholder {
+	  position: relative;
+	  top: 3px;
+	}
+	.callback .fcallback {
+	  width: 100%;
+	  padding: 8px 14px 11px 14px;
+	  -webkit-border-radius: 18px;
+	  -moz-border-radius: 18px;
+	  -ms-border-radius: 18px;
+	  border-radius: 18px;
+	  border: 0;
+	  font-size: 19px;
+	  text-align: center;
+	  height: 38px;
+	  background: #bde566;
+		color: #212223;
+	  cursor: pointer;
+	  -moz-transition: 0.3s;
+	  -o-transition: 0.3s;
+	  -webkit-transition: 0.3s;
+	  transition: 0.3s;
+	}
+	.callback .ok-message {
+	  text-align: center;
+	  color: #fff;
+	  margin-top: 12px;
+	  font-size: 14px;
+	}
+	.col-sm-11 {
+	    width: 95%;
+	    margin: 10px;
+	}
+	.fcallback{
+		margin-top: 10px;
+	}
+	@media (max-width: 767px) {
+
+	.mob_100{
+		width: 100% !important;
+	}
+	.callback .cb-title {
+	  color: #ffffff;
+	  text-transform: uppercase;
+	  text-align: center;
+	  margin-bottom: 25px;
+	  font-size: 16px;
+	}
+	.callback {
+	    background: rgba(0 60 82 / 58%);
+	    -webkit-border-radius: 10px;
+	    -moz-border-radius: 10px;
+	    -ms-border-radius: 10px;
+	    border-radius: 18px;
+	    padding: 15px 20px 10px 20px;
+	    margin: 25px auto;
+	    max-width: 300px;
+	  }
+	.callback input {
+	    width: 100%;
+	    padding: 8px 14px 12px 14px;
+	    -webkit-border-radius: 8px;
+	    -moz-border-radius: 8px;
+	    -ms-border-radius: 8px;
+	    border-radius: 18px;
+	    border: 0;
+	    font-size: 16px;
+	    background: #FFF;
+	    height: 34px;
+	    margin-bottom: 10px;
+	  }
+	.callback .fcallback {
+	    font-size: 16px;
+	    height: 38px;
+	    padding: 6px 14px 11px 14px;
+	  }
+	.form-width{
+	  width: 100% !important;
+	  margin-left: 0 !important;
+	}
+	}
+	.num_quest{
+	    color: white;
+	    text-align: left;
+	}
+	.hidden-block{
+	    display: none;
+	}
+	.fwd, .bck{
+	    font-size: 16px;
+	    padding: 9px;
+	    width: 30%;
+	    border-radius: 18px;
+	    border: 0;
+	    text-align: center;
+	    background: #bde566;
+	    color: #212223;
+	    float: left;
+	    cursor: pointer;
+	    max-width: 100px;
+	}
+	.fwd{
+	    float: right !important;
+	}
+	.answer-row{
+	    float: left;
+	    min-width: 45%;
+	    margin-right: 10px;
+	    margin-bottom: 10px;
+	    background: #ffffff2e;
+	    border-radius: 20px;
+	    padding-top: 3px;
+	    text-align: left;
+	    padding-left: 5px;
+	}
+	.answer-row label{
+	    color: white;
+	    padding: 10px;
+	    cursor: pointer;
+	    font-size: 18px;
+	    position: relative;
+	    top: 9px;
+	}
+	.down{
+	    position: relative;
+	}
+
+	.form-block{
+	    border-radius: 10px;
+	    padding: 3px;
+	    background: #8d5a5a00;
+	}
+
+	.fade-out-block{
+				animation: outBlock 0.5s linear forwards;
+			}
+	@keyframes outBlock {
+		0% {
+	    opacity: 1;
+	    transform: translateY(0px);
+	    z-index: 1;
+	  }
+	  99% {
+	    opacity: 0.1;
+	    transform: translateY(50px);
+	    z-index: 1;
+	  }
+	  100%{
+	  	opacity: 0;
+	  	z-index: -10;
+	  }
+	}
+
+	.fade-in-block {
+	  display: block;
+	  animation: showBlock 0.5s linear forwards;
+	}
+
+
+	@keyframes showBlock {
+	  0% {
+	    opacity: 0;
+	    transform: translateY(50px);
+	  }
+	  100% {
+	    opacity: 1;
+	    transform: translateY(0px);
+	  }
+	}
+
+	.red-block{
+	   animation: redBlock 0.35s cubic-bezier(0.72, 0.08, 0.25, 0.84) forwards; 
+	}
+
+	@keyframes redBlock {
+	  0% {
+	    background: #8d5a5a00;
+	  }
+
+	  20%{
+	    transform: translateX(10px);
+	  }
+	  40%{
+	    transform: translateX(-10px);
+	  }
+	  60%{
+	    transform: translateX(10px);
+	  }
+	  100% {
+	    transform: translateX(0px);
+	    background: #8d5a5a;
+	  }
+	}
+	input {
+	    display: inherit;
+	}
+</style><div id='q-row'><div id='start' style='background-size: cover !important; background-position: center; position: absolute; width: 97%; background: url(https://stat.yagoda-group.ru/images/depositphotos_123650766-stock-illustration-glowing-lines-with-dots.jpg); border-radius: 18px; margin: 15px 20px 30px 20px;  min-height: 480px; max-width: 1200px; min-width: 500px; z-index: 1; height: -webkit-fill-available;'>
+					<img style='position: absolute; bottom: 20px; left:20px; max-width:400px; max-height:200px;' src='https://stat.yagoda-group.ru/images/лого ИИ-бел.png'>
+	        		<div style='margin-left: 50%; font-size: 25px; padding: 10px; background: #ffffffb5; height: -webkit-fill-available; border-radius: 0 18px 18px 0;'>
+	        			<h3>Ответьте на 5 вопросов и получите скидку 10 % на все услуги!</h3>
+	        			<div style='position: absolute;  bottom: 20px;  right: 20px;' class='fwd hover-shadow' onclick='get_start();'> Начать >> </div>
+	        		</div>
+	        	</div><div class='callback'>
+          <div class='cb-title'>
+              Ответьте на несколько вопросов:
+          </div>
+	        <form action='http://quizplatform/send_quiz.php' class='row form-block' method='post' enctype='multipart/form-data' style='margin: auto;'><div id='quizblock0' class='hidden-block'><h4 class='cb-title'>Откуда вы узнали о нас?</h4><div class='col-sm-11 col-xs-12' style='margin-bottom: 300px;'><div class='answer-row mob_100'onclick='change_buttons(1,0);'><span><input id='checkbox_answer0-0' type='checkbox' name='checkbox_0' value='VK'  style='width: 20%;' /><label for='checkbox_answer0-0' style='top:-9px;'>VK</label></span></div><div class='answer-row mob_100'onclick='change_buttons(1,0);'><span><input id='checkbox_answer0-1' type='checkbox' name='checkbox_0' value='Insta'  style='width: 20%;' /><label for='checkbox_answer0-1' style='top:-9px;'>Insta</label></span></div><div class='answer-row mob_100'onclick='change_buttons(1,0);'><span><input id='checkbox_answer0-2' type='checkbox' name='checkbox_0' value='Сайт'  style='width: 20%;' /><label for='checkbox_answer0-2' style='top:-9px;'>Сайт</label></span></div><div class='answer-row mob_100'onclick='change_buttons(1,0);'><span><input id='checkbox_answer0-3' type='checkbox' name='checkbox_0' value='Другое'  style='width: 20%;' /><label for='checkbox_answer0-3' style='top:-9px;'>Другое</label></span></div><div class='answer-row mob_100'onclick='change_buttons(1,0);'><span><input id='checkbox_answer0-4' type='checkbox' name='checkbox_0' value='не помню'  style='width: 20%;' /><label for='checkbox_answer0-4' style='top:-9px;'>не помню</label></span></div></div><div class='fwd hover-shadow' onclick='red_back();'>Далее >></div></div><div id='quizblock1' class='hidden-block'><h4 class='cb-title'>Как часто вы посещаете наш магазин ? </h4><div class='col-sm-11 col-xs-12' style='margin-bottom: 300px;'><div class='answer-row mob_100'onclick='change_buttons(2,1);'><span><input id='answer1-0' type='radio' name='radio_1' value='1 раз в месяц' /><label for='answer1-0' >1 раз в месяц</label></span></div><div class='answer-row mob_100'onclick='change_buttons(2,1);'><span><input id='answer1-1' type='radio' name='radio_1' value='Перед 1 сентября' /><label for='answer1-1' >Перед 1 сентября</label></span></div></div><div class='fwd hover-shadow' onclick='red_back();'>Далее >></div><div class='bck hover-shadow'><< Назад</div></div><div id='quizblock2' class='hidden-block'><h4 class='cb-title'>Какие новые товары вы хотели видеть в нашем ассортименте?</h4><div class='col-sm-11 col-xs-12' style='margin-bottom: 300px;'><div class='answer-row mob_100'onclick='change_buttons(3,2);'><span><input id='answer2-0' type='radio' name='radio_2' value='Укажите несколько товаров' /><label for='answer2-0' >Укажите несколько товаров</label></span></div><div class='answer-row mob_100'style='width:100%;'onclick='change_buttons(3,2);'><span></span><label for='text_answer2-1' >Написать несколько товаров</label><input id='text_answer2-1' type='text' name='text_2' value='' /></div></div><div class='fwd hover-shadow' onclick='red_back();'>Далее >></div><div class='bck hover-shadow'><< Назад</div></div><div id='quizblock3' class='hidden-block'><h4 class='cb-title'>У вас есть карта?</h4><div class='col-sm-11 col-xs-12' style='margin-bottom: 300px;'><div class='answer-row mob_100'onclick='change_buttons(5,3);'><span><input id='answer3-0' type='radio' name='radio_3' value='да' /><label for='answer3-0' >да</label></span></div><div class='answer-row mob_100'onclick='change_buttons(4,3);'><span><input id='answer3-1' type='radio' name='radio_3' value='нет' /><label for='answer3-1' >нет</label></span></div></div><div class='fwd hover-shadow' onclick='red_back();'>Далее >></div><div class='bck hover-shadow'><< Назад</div></div><div id='quizblock4' class='hidden-block'><h4 class='cb-title'>Хотите получить?</h4><div class='col-sm-11 col-xs-12' style='margin-bottom: 300px;'><div class='answer-row mob_100'onclick='change_buttons(5,4);'><span><input id='answer4-0' type='radio' name='radio_4' value='Да' /><label for='answer4-0' >Да</label></span></div><div class='answer-row mob_100'onclick='change_buttons(5,4);'><span><input id='answer4-1' type='radio' name='radio_4' value='Нет' /><label for='answer4-1' >Нет</label></span></div></div><div class='fwd hover-shadow' onclick='red_back();'>Далее >></div><div class='bck hover-shadow'><< Назад</div></div><div id='quizblock5' class='hidden-block'><div class='col-sm-11 col-xs-12'><input type='text' name='quiz_name' placeholder='Ф.И.О.' autocomplete='off' value='' class='input-name' required='required' pattern='.{3,}' /></div><div class='col-sm-11 col-xs-12'><input type='tel' name='quiz_phone' placeholder='Ваш телефон' autocomplete='off' value='' class='input-phone' required='required'/></div><div class='col-sm-11 col-xs-12'><input type='text' name='quiz_id' value='16' style='display: none;'/><input type='text' name='redirect' value='https://yagoda-group.ru' style='display: none;'/><input type='submit' class='fcallback' value='Отправить' /></div><p style='margin-bottom: 50px;'>*Нажимая отправить вы соглашаетесь с условиями конкурса и <a  href='https://yagoda-group.ru/privacy/' target='blank' style='color:black;'>политикой обработки данных</a></p><div class='bck hover-shadow'><< Назад</div></div></form><div class='ok-message'></div></div><script type='text/javascript'>document.querySelector('#quizblock0').style.display='block';function next(next, now){let next_id = '#quizblock'+next;let now_id = '#quizblock'+now;document.querySelector(now_id).style.display = 'none';document.querySelector(next_id).style.display = 'block';document.querySelector('#q-row > div.callback').classList.add('fade-in-block');document.querySelector('#q-row > div.callback > div.cb-title').classList.remove('red-block');}function change_buttons(next, now){document.querySelector('#q-row > div.callback').classList.remove('fade-in-block');document.querySelector('#q-row > div.callback > div.cb-title').classList.remove('red-block');let now_id = '#quizblock'+now;let func_next = 'next(' + next + ', ' + now + ');';try {document.querySelector(now_id+' > div.fwd').removeAttribute('onclick');}catch(err){console.log(err);}try {document.querySelector(now_id+' > div.fwd').setAttribute('onclick', func_next);} catch (err) {console.log(err);}let next_id = '#quizblock'+next;let func_back = 'next(' + now + ', ' + next + ');';try {document.querySelector(next_id+' > div.bck').removeAttribute('onclick');} catch (err) {console.log(err);}try {document.querySelector(next_id+' > div.bck').setAttribute('onclick', func_back);} catch (err) {console.log(err);}}function red_back(){document.querySelector('#q-row > div.callback > div.cb-title').classList.add('red-block');}function get_start(){document.querySelector('#start').classList.add('fade-out-block');}</script><script type='text/javascript'>let my_url = 'stat.yagoda-group.ru';
+			let с_url = document.location.hostname;
+			if (my_url === с_url){ 
+				my_url = с_url; 
+				console.log(с_url);
+			} else {
+				document.querySelector('#q-row').remove();
+				$('#q-row').remove();
+			}
+		</script></div>
